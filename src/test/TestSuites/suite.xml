@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="3" verbose="1" name="Course_project_saucedemo"
+       annotations="JDK" parallel="tests">
+
+    <test name="First Test Suite">
+        <classes>
+            <class name="my.qa.automation.LoginSuccessfulTest"/>
+        </classes>
+    </test>
+    <test name="LoginTests">
+        <classes>
+            <class name="my.qa.automation.CheckoutTest"/>
+        </classes>
+    </test>
+    <test name="ProductTests">
+        <classes>
+            <class name="my.qa.automation.AddProductsToCartTests"/>
+        </classes>
+    </test>
+</suite>
