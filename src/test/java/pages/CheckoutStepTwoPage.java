@@ -12,9 +12,6 @@ public class CheckoutStepTwoPage {
     @FindBy(id = "finish")
     private WebElement finishCheckoutBtn;
 
-    @FindBy(id = "cancel")
-    private WebElement cancelBtn;
-
     @FindBy(xpath = "//*[text()='Checkout: Overview']")
     private WebElement stepTwoOfCheckoutTitle;
 

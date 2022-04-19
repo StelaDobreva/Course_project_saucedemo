@@ -23,9 +23,6 @@ public class CartPage{
     @FindBy(className = "shopping_cart_badge")
     private WebElement shoppingCartCounter;
 
-    @FindBy(id = "continue-shopping")
-    private WebElement backToShoppingLink;
-
     @FindBy(id = "checkout")
     private WebElement checkoutBtn;
 

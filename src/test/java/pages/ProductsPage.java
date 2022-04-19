@@ -89,6 +89,6 @@ public class ProductsPage {
 
         return new ProductInnerPage(driver);
     }
-    }
+}
 
 

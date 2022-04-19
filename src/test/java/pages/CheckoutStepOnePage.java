@@ -20,12 +20,6 @@ public class CheckoutStepOnePage {
       @FindBy(id = "continue")
       private WebElement continueWithCheckoutBtn;
 
-      @FindBy(id = "cancel")
-      private WebElement cancelBtn;
-
-      @FindBy(xpath = "//button[@class='error-button']")
-      private WebElement xButtonOfCheckoutErrorMessages;
-
       @FindBy(xpath = "//*[text()='Checkout: Your Information']")
       WebElement stepOneOfCheckoutTitle;
 

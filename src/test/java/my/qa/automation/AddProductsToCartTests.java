@@ -12,7 +12,6 @@ import pages.ProductsPage;
 import utils.csvHelper;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class AddProductsToCartTests extends TestUtil {
 

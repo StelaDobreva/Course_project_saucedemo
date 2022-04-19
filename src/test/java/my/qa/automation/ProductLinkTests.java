@@ -5,6 +5,7 @@ import com.opencsv.exceptions.CsvException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.LoginPage;
 import pages.ProductInnerPage;
 import pages.ProductsPage;
@@ -27,9 +28,12 @@ public class ProductLinkTests extends TestUtil {
 
         ProductInnerPage productInnerPage = productsPage.goToProductInnerPage(productNumber);
 
-        Assert.assertTrue(productInnerPage.isBackToProductsBtnDisplayed());
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(productInnerPage.isBackToProductsBtnDisplayed());
 
-        Assert.assertTrue(productInnerPage.isProductInnerPageVisible(productName));
+        softAssert.assertTrue(productInnerPage.isProductInnerPageVisible(productName));
+
+        softAssert.assertAll();
     }
 }
 

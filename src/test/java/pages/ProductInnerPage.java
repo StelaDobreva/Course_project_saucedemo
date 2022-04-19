@@ -16,8 +16,6 @@ public class ProductInnerPage {
 
     protected WebDriver driver;
     private static final String ADD_TO_CART_LOCATOR = "//button[@id='add-to-cart-%s']";
-    private static final String REMOVE_FROM_CART_LOCATOR = "//button[@id='remove-%s']";
-
 
     @FindBy(id = "back-to-products")
     WebElement backToProductsBtn;

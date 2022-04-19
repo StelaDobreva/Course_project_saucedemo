@@ -2,7 +2,6 @@ package my.qa.automation;
 
 import base.TestUtil;
 import com.opencsv.exceptions.CsvException;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -36,7 +35,7 @@ public class CheckoutTest extends TestUtil {
 
         CartPage cartPage = productsPage.goToTheCart();
 
-            Assert.assertTrue(cartPage.isCartPageDisplayed());
+            softAssert.assertTrue(cartPage.isCartPageDisplayed());
 
         cartPage.removeItemFromTheCart(productName3);
 
@@ -44,14 +43,14 @@ public class CheckoutTest extends TestUtil {
 
         CheckoutStepOnePage checkoutStepOnePage = cartPage.continueToPageOneOfCheckout();
 
-            Assert.assertTrue(checkoutStepOnePage.stepOneOfCheckoutIsDisplayed());
+            softAssert.assertTrue(checkoutStepOnePage.stepOneOfCheckoutIsDisplayed());
 
         CheckoutStepTwoPage checkoutStepTwoPage = checkoutStepOnePage.fillInDataForCheckout(firstName, lastName, postalCode);
 
-            Assert.assertTrue(checkoutStepTwoPage.stepTwoOfCheckoutIsDisplayed());
+            softAssert.assertTrue(checkoutStepTwoPage.stepTwoOfCheckoutIsDisplayed());
 
         CheckoutCompletePage checkoutCompletePage = checkoutStepTwoPage.goToFinishCheckout();
 
-            Assert.assertTrue(checkoutCompletePage.checkoutCompleteMessageIsDisplayed());
+            softAssert.assertTrue(checkoutCompletePage.checkoutCompleteMessageIsDisplayed());
     }
 }
