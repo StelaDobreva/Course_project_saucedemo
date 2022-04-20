@@ -1,6 +1,6 @@
 # Course_project_saucedemo
 Course project assignment
-  Create the following automated test scenarios for site https://www.saucedemo.com/:
+  /n Create the following automated test scenarios for site https://www.saucedemo.com/:
     Successful login
     Unsuccessful login
     Add items in the cart (at least two optional - to be submitted as parameters) 
